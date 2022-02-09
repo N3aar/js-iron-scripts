@@ -1,0 +1,27 @@
+0 - Saida
+
+2 - Avance duas casas
+13 - Avance duas casas
+24 - Avance duas casas
+52 - Avance duas casas
+
+10 - Volte duas casas
+19 - Volte duas casas
+39 - Volte duas casas
+56 - Volte duas casas
+
+5 - Fique uma rodada sem jogar
+33 - Fique duas rodadas sem jogar
+
+16 - Jogue novamente
+44 - Jogue novamente
+
+31 - Teleporte
+46 - Teleporte
+
+27 - Ponto de Teleporte
+35 - Ponto de Teleporte
+42 - Ponto de Teleporte
+50 - Ponto de Teleporte
+
+60 - Chegada
