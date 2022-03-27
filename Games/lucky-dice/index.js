@@ -1,4 +1,4 @@
-import { wait, createFakePlayer } from '../../utils'
+import { wait, createFakePlayer } from '../../util/utils'
 
 // Game Customzation
 const config = {
@@ -56,9 +56,8 @@ const seats = {
 }
 
 const messages = {
-	start: 'Jogo começando! Sua vez {}!',
+	start: 'Jogo começando!',
 	special: '{}, []',
-	next: 'Sua vez {}!',
 	win: 'Parabéns, {} ganhou o jogo na rodada []!',
 	leave: '[] saiu!',
 	strike: '{}, recebeu um strike por ausência 1/2',
@@ -906,13 +905,12 @@ const start = () => {
 	const player = game.players[color]
 
 	const message = 'start'
-	const user = player.user.getUsername()
 
 	addSpecialTiles()
 	placeTiles()
 	addBotStep(color)
 	startCooldown(color, config.cooldown)
-	narrator({ message, user })
+	narrator({ message })
 
 	player.user.setEffect(config.effect)
 }
