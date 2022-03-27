@@ -1,4 +1,4 @@
-import { Command, wait } from '../../utils'
+import { Command, wait } from '../../util/utils'
 
 // Configuration
 const config = {
@@ -93,7 +93,7 @@ const removeFreezeAll = () => {
 	game.users.forEach((_, id) => removeFreeze(id))
 
 	const users = Room.getAllPlayers()
-	users.setCanWalk(true, false)
+	users.forEach(user => user.setCanWalk(true, false))
 }
 
 const removeUser = id => {

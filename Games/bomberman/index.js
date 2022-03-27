@@ -184,7 +184,7 @@ const removeRedBomb = player => {
 	}
 
 	if (!player.bomb.red) {
-		player.bomb.type === 'default'
+		player.bomb.type = 'default'
 	}
 
 	return player
@@ -714,6 +714,3 @@ Commands.register(':clear', () => {
 	game.furnis.breakable.forEach(removeBlock)
 	//game.furnis.unbreakable.forEach(removeBlock)
 })
-
-Commands.register(':a', (entity, message) => entity.alert(message))
-Commands.register(':l', (entity, message) => entity.alertLong(message))
